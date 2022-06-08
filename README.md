@@ -7,7 +7,7 @@ A Nix Flake to build the [WSL2 Kernel](https://github.com/microsoft/WSL2-Linux-K
 ## Instructions
 
 1. Install [nix](https://nixos.org/download.html)
-2. `git clone git@github.com:meatcar/wsl2-linux-kernel-nix`
+2. Clone this repo.
 3. `cd wsl2-linux-kernel-nix`
 4. `nix build`
 5. `cp result/bzImage /mnt/c/Users/<UserName>/kernel`
