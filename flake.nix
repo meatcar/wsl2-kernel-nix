@@ -27,28 +27,7 @@
           allowImportFromDerivation = true;
           configfile = pkgs.writeText "config" ''
             ${builtins.readFile "${wsl2-kernel}/Microsoft/config-wsl"}
-            CONFIG_NFT_CT=y
-            CONFIG_NFT_COUNTER=y
-            CONFIG_NFT_CONNLIMIT=y
-            CONFIG_NFT_LOG=y
-            CONFIG_NFT_LIMIT=y
-            CONFIG_NFT_MASQ=y
-            CONFIG_NFT_REDIR=y
-            CONFIG_NFT_NAT=y
-            CONFIG_NFT_TUNNEL=y
-            CONFIG_NFT_OBJREF=y
-            CONFIG_NFT_QUEUE=y
-            CONFIG_NFT_QUOTA=y
-            CONFIG_NFT_REJECT=y
-            CONFIG_NFT_REJECT_INET=y
-            CONFIG_NFT_COMPAT=y
-            CONFIG_NFT_HASH=y
-            CONFIG_NF_SOCKET_IPV4=y
-            CONFIG_NF_TPROXY_IPV4=y
-            CONFIG_NFT_REJECT_IPV4=y
-            CONFIG_NF_SOCKET_IPV6=y
-            CONFIG_NF_TPROXY_IPV6=y
-            CONFIG_NFT_REJECT_IPV6=y
+            # Extra config here
           '';
         };
       in
